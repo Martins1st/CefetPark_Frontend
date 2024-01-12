@@ -1,0 +1,39 @@
+body {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    height: 100vh!important;
+    margin: 0!important;
+    background-color: #fafafa!important;
+}
+
+.login-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.p-button{
+    width: 100%!important;
+}
+
+.signup-link {
+    margin-top: 15px;
+    color: #003569;
+}

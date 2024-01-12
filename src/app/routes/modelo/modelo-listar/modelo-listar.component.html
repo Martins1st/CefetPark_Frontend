@@ -1,0 +1,37 @@
+<div class="row mb-5">
+    <div class="col-10">
+        <h1 class="h3 ml-3 text-gray-800">Modelos</h1>
+    </div>
+    <div class="col-2">
+        <p-button [routerLink]="['../cadastrar']" label="Cadastrar"></p-button>
+    </div>
+</div>
+<p-table [value]="modelos" [tableStyle]="{ 'min-width': '50rem' }" [rows]="10" [paginator]="true" dataKey="id"
+[globalFilterFields]="['nome', 'id']"
+    [showCurrentPageReport]="true" [tableStyle]="{ 'min-width': '50rem' }"
+    currentPageReportTemplate="Mostrando {first} de {last} ate {totalRecords} Registros" [rowsPerPageOptions]="[10, 15, 20]">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Marca</th>
+            <th>Ações</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-modelo>
+        <tr>
+            <td>{{ modelo.id }}</td>
+            <td>{{ modelo.nome }}</td>
+            <td>{{modelo.marca?.nome}}</td>
+            <td>
+                <i [routerLink]="['../editar/' + modelo.id]" class="pi pi-pencil mr-3 pointer"></i>
+                <i class="pi pi-trash pointer" (click)="DeletarQuestion(modelo.id)"></i>
+            </td>
+
+        </tr>
+    </ng-template>
+
+</p-table>
+
+
+<app-toast-question (confirmar)="Confirmar()"></app-toast-question>

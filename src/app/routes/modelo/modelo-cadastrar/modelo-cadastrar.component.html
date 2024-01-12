@@ -1,0 +1,21 @@
+<div class="row mb-5">
+    <h1 class="h3 ml-3 text-gray-800">{{title}} Modelo</h1>
+</div>
+<ng-container [formGroup]="form">
+    <div class="row">
+        <div class="col-3">
+            <span class="p-float-label">
+                <input pInputText id="nome" class="" formControlName="nome" />
+                <label htmlFor="nome">Nome</label>
+            </span>
+        </div>
+        <div class="col-3">
+            <p-dropdown class="dropdown-width" formControlName="marca_Id" [filter]="true" [options]="marcas" optionLabel="nome" optionValue="id" placeholder="Selecione a marca"></p-dropdown>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-2">
+            <p-button [label]="function" (onClick)="Salvar()"></p-button>
+        </div>
+    </div>
+</ng-container>

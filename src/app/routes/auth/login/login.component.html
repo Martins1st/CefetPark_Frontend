@@ -1,0 +1,10 @@
+<div style="margin-top: 5rem;" class="row justify-content-center">
+    <div class="login-container">
+        <img src="assets/images/cefet-rj.png" alt="Cefet Logo" class="logo">
+        <form [formGroup]="form" (keyup.enter)="login()">
+            <input type="text" formControlName="login" name="username" placeholder="Cpf" >
+            <input type="password" formControlName="senha" name="password" placeholder="Senha" >
+            <p-button label="Entrar" (onClick)="login()"></p-button>
+        </form> 
+    </div> 
+</div>

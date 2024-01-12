@@ -1,0 +1,41 @@
+<div class="row mb-5">
+    <h1 class="h3 ml-3 text-gray-800">{{title}} Convidado</h1>
+</div>
+<ng-container [formGroup]="form">
+
+    <div class="row mt-5">
+        <div class="col-3">
+            <span class="p-float-label">
+                <input pInputText id="nome" class="" formControlName="nome" />
+                <label htmlFor="nome">Nome</label>
+            </span>
+        </div>
+        <div class="col-3">
+            <span class="p-float-label">
+                <input pInputText id="sicap" class="" formControlName="sicap" />
+                <label htmlFor="sicap">Sicap</label>
+            </span>
+        </div>
+        <div class="col-3">
+            <span class="p-float-label">
+                <p-inputMask [unmask]="true" mask="999.999.999-99" formControlName="cpf"></p-inputMask>
+                <label htmlFor="cpf">Cpf</label>
+            </span>
+        </div>
+    </div>
+</ng-container>
+<div class="row mt-5">
+    <div class="col-3">
+        <span class="p-float-label">
+            <p-multiSelect inputId="float-label" [options]="carros" [filter]="true" [(ngModel)]="carrosSelecionados"
+                optionLabel="placa" placeholder="Selecione os Carros" optionValue="id"
+                display="chip"></p-multiSelect>
+            <label for="float-label">Carros</label>
+        </span>
+    </div>
+</div>
+<div class="row justify-content-center mt-4">
+    <div class="col-2">
+        <p-button [label]="function" (onClick)="Salvar()"></p-button>
+    </div>
+</div>

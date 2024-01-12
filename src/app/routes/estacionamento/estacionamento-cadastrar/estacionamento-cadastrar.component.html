@@ -1,0 +1,83 @@
+<div class="row mb-5">
+    <h1 class="h3 ml-3 text-gray-800">{{title}} Estacionamento</h1>
+</div>
+<ng-container [formGroup]="form">
+    <div class="row">
+        <div class="col-3 mt-5">
+            <span class="p-float-label">
+                <input pInputText id="nome" class="" formControlName="nome" />
+                <label htmlFor="nome">Nome</label>
+            </span>
+        </div>
+        <div class="col-3 mt-5">
+            <span class="p-float-label">
+                <p-inputNumber inputId="integeronly" formControlName="qtdVagasTotal"> </p-inputNumber>
+                <label htmlFor="number-input">Quantidade vagas Total</label>
+            </span>
+        </div>
+        <ng-container formGroupName="endereco">
+            <div class="col-3 mt-5">
+                <span class="p-float-label">
+                    <input pInputText id="nomeEndereco" class="" formControlName="nome" />
+                    <label htmlFor="nomeEndereco">Nome Endereco</label>
+                </span>
+            </div>
+            <div class="col-3 mt-5">
+                <span class="p-float-label">
+                    <input pInputText id="tipoLogradouro" class="" formControlName="tipoLogradouro" />
+                    <label htmlFor="tipoLogradouro">Tipo Logradouro</label>
+                </span>
+            </div>
+            <div class="col-3 mt-5">
+                <span class="p-float-label">
+                    <p-inputMask (onComplete)="buscarCep()" [unmask]="true" mask="99999-999" formControlName="cep" ></p-inputMask>
+                    <label htmlFor="cep">Cep</label>
+                </span>
+            </div>
+            <div class="col-3 mt-5">
+                <span class="p-float-label">
+                    <input pInputText id="numeroEndereco" class="" formControlName="numero" />
+                    <label htmlFor="numeroEndereco">Numero</label>
+                </span>
+            </div>
+            <div class="col-3 mt-5">
+                <span class="p-float-label">
+                    <input pInputText id="nomeEndereco" class="" formControlName="complemento" />
+                    <label htmlFor="nomeEndereco">Complemento</label>
+                </span>
+            </div>
+            <div class="col-3 mt-5">
+                <span class="p-float-label">
+                    <input pInputText id="nomeRua" class="" formControlName="rua" />
+                    <label htmlFor="nomeRua">Rua</label>
+                </span>
+            </div>
+            <div class="col-3 mt-5">
+                <span class="p-float-label">
+                    <input pInputText id="nomeBairro" class="" formControlName="bairro" />
+                    <label htmlFor="nomeEndereco">Bairro</label>
+                </span>
+            </div>
+            <div class="col-3 mt-5">
+                <span class="p-float-label">
+                    <input pInputText id="numeroEndereco" class="" formControlName="latitude" />
+                    <label htmlFor="numeroEndereco">Latitude</label>
+                </span>
+            </div>
+            <div class="col-3 mt-5">
+                <span class="p-float-label">
+                    <input pInputText id="numeroEndereco" class="" formControlName="longitude" />
+                    <label htmlFor="numeroEndereco">Longitude</label>
+                </span>
+            </div>
+
+            
+            
+        </ng-container>
+    </div>
+</ng-container>
+<div class="row justify-content-center mt-4">
+    <div class="col-2">
+        <p-button [label]="function" (onClick)="Salvar()"></p-button>
+    </div>
+</div>

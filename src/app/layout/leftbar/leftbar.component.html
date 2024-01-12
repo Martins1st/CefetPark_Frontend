@@ -1,0 +1,151 @@
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+
+        <div class="sidebar-brand-text mx-2">Cefet Park</div>
+    </a>
+
+    <!-- <hr class="sidebar-divider my-0">
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+    </li> -->
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Cadastros
+    </div>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo5" aria-expanded="true"
+            aria-controls="collapseTwo5"><i class="fas fa-parking"></i>
+            <span>Estacionamento</span>
+        </a>
+        <div id="collapseTwo5" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Funcionalidades:</h6>
+                <a class="collapse-item" [routerLink]="['/estacionamento/listar']" routerLinkActive="router-link-active" >Listar</a>
+                <a class="collapse-item" [routerLink]="['/estacionamento/cadastrar']" routerLinkActive="router-link-active">Cadastrar</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo7" aria-expanded="true"
+            aria-controls="collapseTwo7">
+            <i class="fas fa-user"></i>
+            <span>Usuario</span>
+        </a>
+        <div id="collapseTwo7" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Funcionalidades:</h6>
+                <a class="collapse-item" [routerLink]="['/usuario/listar']" routerLinkActive="router-link-active" >Listar</a>
+                <a class="collapse-item" [routerLink]="['/usuario/cadastrar']" routerLinkActive="router-link-active">Cadastrar</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collpaseCarro" aria-expanded="true"
+            aria-controls="collapseTwo">
+            <i class="fas fa-car"></i>
+            <span>Carro</span>
+        </a>
+        <div id="collpaseCarro" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Funcionalidades:</h6>
+                <a class="collapse-item" [routerLink]="['/carro/listar']" routerLinkActive="router-link-active" >Listar</a>
+                <a class="collapse-item" [routerLink]="['/carro/cadastrar']" routerLinkActive="router-link-active">Cadastrar</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo1" aria-expanded="true"
+            aria-controls="collapseTwo">
+            <i class="fa fa-palette"></i>
+            <span>Cores</span>
+        </a>
+        <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Funcionalidades:</h6>
+                <a class="collapse-item" [routerLink]="['/cor/listar']" routerLinkActive="router-link-active" >Listar</a>
+                <a class="collapse-item" [routerLink]="['/cor/cadastrar']" routerLinkActive="router-link-active">Cadastrar</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="true"
+            aria-controls="collapseTwo2"><i class="fas fa-tape"></i>
+            <span>Modelo</span>
+        </a>
+        <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Funcionalidades:</h6>
+                <a class="collapse-item" [routerLink]="['/modelo/listar']" routerLinkActive="router-link-active" >Listar</a>
+                <a class="collapse-item" [routerLink]="['/modelo/cadastrar']" routerLinkActive="router-link-active">Cadastrar</a>
+            </div>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo3" aria-expanded="true"
+            aria-controls="collapseTwo3">
+            <i class="far fa-id-card"></i>
+            <span>Departamento</span>
+        </a>
+        <div id="collapseTwo3" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Funcionalidades:</h6>
+                <a class="collapse-item" [routerLink]="['/departamento/listar']" routerLinkActive="router-link-active" >Listar</a>
+                <a class="collapse-item" [routerLink]="['/departamento/cadastrar']" routerLinkActive="router-link-active">Cadastrar</a>
+            </div>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo4" aria-expanded="true"
+            aria-controls="collapseTwo4">
+            <i class="fas fa-user-shield"></i>
+            <span>Convidado</span>
+        </a>
+        <div id="collapseTwo4" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Funcionalidades:</h6>
+                <a class="collapse-item" [routerLink]="['/convidado/listar']" routerLinkActive="router-link-active" >Listar</a>
+                <a class="collapse-item" [routerLink]="['/convidado/cadastrar']" routerLinkActive="router-link-active">Cadastrar</a>
+            </div>
+        </div>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo6" aria-expanded="true"
+            aria-controls="collapseTwo6"><i class="fas fa-bookmark"></i>
+            <span>Marca</span>
+        </a>
+        <div id="collapseTwo6" class="collapse" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Funcionalidades:</h6>
+                <a class="collapse-item" [routerLink]="['/marca/listar']" routerLinkActive="router-link-active" >Listar</a>
+                <a class="collapse-item" [routerLink]="['/marca/cadastrar']" routerLinkActive="router-link-active">Cadastrar</a>
+            </div>
+        </div>
+    </li>
+    
+
+</ul>
